@@ -1,0 +1,16 @@
+/* HOME PAGE */
+/*Default*/
+main {
+    background-color: blue;
+    height: 20dvh;
+}
+
+
+/* Tablet size*/
+
+@media only screen and (max-width: 1024px) {}
+
+
+/* --Phone size--*/
+
+@media only screen and (max-width: 640px) {}
