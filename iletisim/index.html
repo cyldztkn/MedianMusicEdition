@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="../components.css" />
     <!-- Scripts -->
-    <script src="../main.js" defer></script>
+    <script src="./main.js" defer></script>
   </head>
   <body>
     <div id="root">
@@ -39,7 +39,7 @@
             alt="mobile-menu-close-button"
             id="close-button"
           />
-          <nav>
+          <nav id="main-nav">
             <a href="/hakkimizda">Hakkımızda</a>
             <a href="/katalog">Katalog</a>
             <a href="/senkronizasyon">Senkronizasyon</a>
@@ -50,7 +50,50 @@
       </header>
       <!-- Header End -->
       <main>
-        <h1>İletişim</h1>
+        <section class="contact">
+          <header>
+            <div class="title-container">
+              <h2>İletişim</h2>
+            </div>
+          </header>
+          <div class="contact-container">
+            <div class="inner">
+              <h3>Adres</h3>
+              <span></span>
+              <p>Caddebostan Mah. Bağdat Cad.</p>
+              <p>No: 270, Kat: 2, Daire:8 34728</p>
+              <p>Kadıköy/Istanbul</p>
+            </div>
+
+            <div class="inner">
+              <h3>Telefon</h3>
+              <span></span>
+              <p>
+                <a href="tel:02122525351">Tel: 0 212 252 53 51</a>
+              </p>
+              <p>Fax: 0 212 252 53 76</p>
+            </div>
+
+            <div class="inner">
+              <h3>E-Mail</h3>
+              <span></span>
+              <p>
+                <a href="mailto:info@median.com.tr">info@median.com.tr</a>
+              </p>
+
+            </div>
+          </div>
+        </section>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1506.2750897311541!2d29.063116999999995!3d40.969432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab75ffa3d632d%3A0xbe5628a58a142706!2sMedian%20M%C3%BCzik%20Edisyon!5e0!3m2!1str!2sus!4v1719148150282!5m2!1str!2sus"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </main>
 
       <!-- Footer Start -->

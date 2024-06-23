@@ -27,7 +27,7 @@ header {
             display: none;
         }
 
-        nav {
+        nav#main-nav {
             width: 100%;
             display: inline-flex;
             align-items: center;
@@ -301,7 +301,7 @@ section.infinity-carousel-logo {
                 margin-left: auto;
             }
 
-            nav {
+            nav#main-nav {
                 transition: all 0.8s ease-in-out;
                 flex-direction: column;
                 position: absolute;
@@ -382,7 +382,7 @@ section.infinity-carousel-logo {
     header {
         .nav-container {
 
-            nav {
+            nav#main-nav {
                 left: calc(100% - 95dvw);
 
                 a {
