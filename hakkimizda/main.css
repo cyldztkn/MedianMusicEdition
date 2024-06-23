@@ -1,14 +1,92 @@
-/* HOME PAGE */
+/* About */
 /*Default*/
-main {
-    background-color: blue;
-    height: 20dvh;
-}
 
+main {
+    section.about-us {
+        height: unset;
+        min-height: 100svh;
+
+        header {
+            .title-container {
+                h2 {
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .content {
+            width: 80%;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4rem;
+            color: var(--text);
+            line-height: 160%;
+            font-weight: 300;
+
+            img {
+                width: 60%;
+            }
+
+            p {
+                width: 76%;
+            }
+        }
+
+    }
+
+    div.social-media {
+        width: 100%;
+        margin: 2rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        a {
+            padding: 0.4rem;
+            background-color: black;
+
+
+            img {
+                width: 1.6rem;
+            }
+        }
+    }
+
+    section.our-team {
+        width: 60%;
+        margin: 0px auto;
+        height: unset;
+        padding: 2rem 0px;
+
+        ul {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1rem;
+
+            h4 {
+                font-weight: 600;
+            }
+            
+            p {
+                font-size: 0.8rem;
+                margin: 0.4rem 0px;
+                font-weight: 300;
+            }
+        }
+
+    }
+}
 
 /* Tablet size*/
 
 @media only screen and (max-width: 1024px) {}
+
 
 
 /* --Phone size--*/
