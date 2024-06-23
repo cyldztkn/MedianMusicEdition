@@ -1,6 +1,6 @@
 :root {
     scroll-behavior: smooth;
-    scroll-padding-top: 20svh;
+    scroll-padding-top: 28svh;
 }
 
 main {
@@ -21,7 +21,7 @@ section#cathalog {
     nav#alphabet {
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(15, 1fr);
+        grid-template-columns: repeat(13, 1fr);
         grid-template-rows: 1fr;
         text-transform: capitalize;
         font-weight: 500;
@@ -80,7 +80,10 @@ div.content {
 
             li {
                 list-style: url('./images/mic.svg');
-                /* font-size: 1rem */
+
+                h5 {
+                    text-transform: capitalize;
+                }
             }
         }
 
@@ -110,9 +113,14 @@ div.content {
         left: 0px;
 
         nav#alphabet {
-            grid-template-columns: repeat(10, 1fr);
+            grid-template-columns: repeat(9, 1fr);
             grid-template-rows: 1fr 1fr 1fr;
             gap: 0.8rem;
+        }
+
+        nav#alphabet :nth-last-child(1) {
+            grid-column-start: 7;
+            grid-column-end: 10;
         }
     }
 
@@ -155,9 +163,15 @@ div.content {
         left: 0px;
 
         nav#alphabet {
-            grid-template-columns: repeat(10, 1fr);
+            grid-template-columns: repeat(9, 1fr);
             grid-template-rows: 1fr 1fr 1fr;
-            gap: 0.5rem;
+            gap: 0.2rem;
+            font-size: 1rem;
+        }
+
+        nav#alphabet :nth-last-child(1) {
+            grid-column-start: 7;
+            grid-column-end: 10;
         }
     }
 
@@ -172,6 +186,13 @@ div.content {
             h4 {
                 width: 60%;
             }
+
+            ul {
+                grid-template-columns: 1fr;
+
+            }
         }
     }
+
+
 }
