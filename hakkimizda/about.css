@@ -72,7 +72,7 @@ main {
             h4 {
                 font-weight: 600;
             }
-            
+
             p {
                 font-size: 0.8rem;
                 margin: 0.4rem 0px;
@@ -85,10 +85,36 @@ main {
 
 /* Tablet size*/
 
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+    main {
+        section.about-us {
+            .content {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        section.our-team {
+            width: 80%;
+
+            ul {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
 
 
 
 /* --Phone size--*/
 
-@media only screen and (max-width: 640px) {}
+@media only screen and (max-width: 640px) {
+    main {
+        section.our-team {
+            ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}

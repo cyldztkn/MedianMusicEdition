@@ -383,10 +383,11 @@ section.infinity-carousel-logo {
         .nav-container {
 
             nav#main-nav {
-                left: calc(100% - 95dvw);
+                left: calc(100% - 92dvw);
+                gap: 0.4rem;
 
                 a {
-                    padding: 1px 2rem;
+                    padding: 1.2rem 2rem;
                 }
 
             }

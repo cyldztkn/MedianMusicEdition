@@ -308,6 +308,7 @@ main {
 
                 .sliders {
                     flex-direction: row;
+                    display: flex;
                     width: 100%;
 
                     .carousel-area {
@@ -369,12 +370,34 @@ main {
 @media only screen and (max-width: 640px) {
 
     main {
+        section.hero-content {
+            .content {
+                h1{
+                    line-height: 120%;
+                }
+                div.buttons {
+                    flex-direction: column;
+
+                    a {
+                        button {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
         section.our-services {
 
             .slider-provider {
+                padding: 2rem 1rem;
                 .sliders {
                     .carousel-area {
                         .slider {
+                            flex-direction: column;
+                            gap: 2rem;
+                            justify-content: center;
+                            align-items: center;
                             .img {
                                 img {
                                     box-shadow: 8px 8px 0px 0px var(--light-bg), 12px 12px 0px 0px var(--black);
@@ -388,10 +411,11 @@ main {
         }
 
         section.last-jobs {
+            padding: 1rem;
             div.content {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr 1fr;
-                width: 80%;
+                width: 90%;
                 row-gap: 0.8rem;
                 column-gap: 0.4rem;
 
