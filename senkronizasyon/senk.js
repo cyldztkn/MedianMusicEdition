@@ -139,3 +139,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Creating Senc Slide Content
+import { diziListesi, filmListesi, reklamListesi } from "./videoList.js";
+let diziEl = document.getElementById("dizi");
+let filmEl = document.getElementById("film");
+let reklamEl = document.getElementById("reklam");
+
+diziEl.innerHTML = diziListesi
+  .map((item) => {
+    return `<div class="video-container" data-video-id="${item}">
+                    <div class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/${item}/hqdefault.jpg');">
+                      <button class="play-button">
+                        <img src="./images/play-icon.svg" alt="" srcset="" />
+                      </button>
+                    </div>
+                  </div>`;
+  })
+  .join("");
+
+filmEl.innerHTML = filmListesi
+  .map((item) => {
+    return `<div class="video-container" data-video-id="${item}">
+                    <div class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/${item}/hqdefault.jpg');">
+                      <button class="play-button">
+                        <img src="./images/play-icon.svg" alt="" srcset="" />
+                      </button>
+                    </div>
+                  </div>`;
+  })
+  .join("");
+reklamEl.innerHTML = reklamListesi
+  .map((item) => {
+    return `<div class="video-container" data-video-id="${item}">
+                    <div class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/${item}/hqdefault.jpg');">
+                      <button class="play-button">
+                        <img src="./images/play-icon.svg" alt="" srcset="" />
+                      </button>
+                    </div>
+                  </div>`;
+  })
+  .join("");
