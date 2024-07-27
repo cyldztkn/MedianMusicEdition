@@ -60,13 +60,14 @@ main {
         width: 60%;
         margin: 0px auto;
         height: unset;
-        padding: 2rem 0px;
+        padding: 3rem 0px;
 
         ul {
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr ;
             gap: 1rem;
+            text-align: center;
 
             h4 {
                 font-weight: 600;
