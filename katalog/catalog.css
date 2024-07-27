@@ -1,198 +1,71 @@
-:root {
-    scroll-behavior: smooth;
-    scroll-padding-top: 28svh;
-}
-
 main {
-    position: relative;
-    background-color: var(--light-bg);
-
-
+  /* border: 1px solid red; */
+  /* width: 100%; */
 }
-
-section#cathalog {
-    height: unset;
-    width: 100%;
-    padding: 2rem;
-    position: sticky;
-    background-color: white;
-    top: 0;
-
-    nav#alphabet {
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(13, 1fr);
-        grid-template-rows: 1fr;
-        text-transform: capitalize;
-        font-weight: 500;
-        font-size: 1.2rem;
-        text-align: center;
-        gap: 0.4rem;
-
-        a {
-            color: var(--orange);
-            border: 1px solid var(--orange);
-            padding: 0.4rem;
-            border-radius: 8px;
-        }
-
-        a:hover {
-            background-color: var(--orange);
-            color: white;
-
-        }
+.container {
+  /* background-color: var(--orange-darker); */
+  min-height: 80svh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 2.4rem;
+      min-height: 100%;
+      img {
+        transition: all 0.4s ease-in-out;
+        filter: grayscale(1);
+        width: 50%;
+      }
     }
-
-
-}
-
-div.content {
-    width: 92%;
-    margin: 0px auto;
-
-    section {
-        height: unset;
-        min-height: 100svh;
-
-        h3 {
-            color: var(--orange);
-            font-weight: 600;
-            width: 40%;
-            border-bottom: 4px solid var(--orange);
-            padding: 1rem;
-            text-transform: uppercase;
-        }
-
-        h4 {
-            color: var(--orange);
-            font-weight: 400;
-            width: 20%;
-            border-bottom: 2px solid var(--orange);
-            padding: 0.5rem 1.6rem;
-        }
-
-        ul {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: 1fr;
-            gap: 1rem;
-            padding-left: 2rem;
-
-            li {
-                list-style: url('./images/mic.svg');
-
-                h5 {
-                    text-transform: capitalize;
-                }
-            }
-        }
-
-        ;
+    div:hover {
+      /* background-color: red; */
+      img {
+        box-shadow: 0.4rem 0.4rem 0px 0px #ffffff,
+          0.8rem 0.8rem 0px 0px var(--orange);
+        filter: grayscale(0);
+      }
+      button.outline {
+        background-color: var(--orange);
+        color: white;
+      }
     }
+  }
 }
-
-
 
 @media only screen and (max-width: 1024px) {
-
-    :root {
-        scroll-padding-top: 32svh;
+  .container {
+    flex-direction: column;
+    justify-content: space-around;
+    a {
+      div {
+        flex-direction: row;
+      }
     }
-
-    header {
-        position: fixed;
-        z-index: 100;
-        background-color: white;
-    }
-
-    section#cathalog {
-        /* padding-top: 24rem; */
-        position: fixed;
-        height: 20svh;
-        top: 12svh;
-        left: 0px;
-
-        nav#alphabet {
-            grid-template-columns: repeat(9, 1fr);
-            grid-template-rows: 1fr 1fr 1fr;
-            gap: 0.8rem;
-        }
-
-        nav#alphabet :nth-last-child(1) {
-            grid-column-start: 7;
-            grid-column-end: 10;
-        }
-    }
-
-    div.content {
-        padding-top: 32svh;
-
-        section {
-            h3 {
-                width: 60%;
-            }
-
-            h4 {
-                width: 40%;
-            }
-
-            ul {
-                grid-template-columns: repeat(2, 1fr);
-
-            }
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 640px) {
-    :root {
-        scroll-padding-top: 32svh;
-    }
-
-    header {
-        position: fixed;
-        z-index: 100;
-        background-color: white;
-    }
-
-    section#cathalog {
-        /* padding-top: 24rem; */
-        position: fixed;
-        height: 20svh;
-        top: 12svh;
-        left: 0px;
-
-        nav#alphabet {
-            grid-template-columns: repeat(9, 1fr);
-            grid-template-rows: 1fr 1fr 1fr;
-            gap: 0.2rem;
-            font-size: 1rem;
+  .container {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem 0px;
+    a {
+      div {
+        flex-direction: column;
+        gap: 1.4rem;
+        img {
+          width: 70%;
         }
-
-        nav#alphabet :nth-last-child(1) {
-            grid-column-start: 7;
-            grid-column-end: 10;
+        button {
+          font-size: 1rem;
+          min-width: 70%;
         }
+      }
     }
-
-    div.content {
-        padding-top: 32svh;
-
-        section {
-            h3 {
-                width: 80%;
-            }
-
-            h4 {
-                width: 60%;
-            }
-
-            ul {
-                grid-template-columns: 1fr;
-
-            }
-        }
-    }
-
-
+  }
 }

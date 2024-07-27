@@ -1,0 +1,174 @@
+:root {
+  scroll-behavior: smooth;
+  scroll-padding-top: 28svh;
+}
+
+main {
+  position: relative;
+  background-color: var(--light-bg);
+}
+
+section#cathalog {
+  height: unset;
+  width: 100%;
+  padding: 2rem;
+  position: sticky;
+  background-color: white;
+  top: 0;
+
+  nav#alphabet {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: center;
+    gap: 0.4rem;
+
+    a {
+      color: var(--orange);
+      border: 1px solid var(--orange);
+      padding: 0.4rem;
+      border-radius: 8px;
+    }
+
+    a:hover {
+      background-color: var(--orange);
+      color: white;
+    }
+  }
+}
+
+div.content {
+  width: 92%;
+  margin: 0px auto;
+
+  section {
+    height: unset;
+    min-height: 100svh;
+
+    h3 {
+      color: var(--orange);
+      font-weight: 600;
+      width: 40%;
+      border-bottom: 4px solid var(--orange);
+      padding: 1rem;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      color: var(--orange);
+      font-weight: 400;
+      width: 20%;
+      border-bottom: 2px solid var(--orange);
+      padding: 0.5rem 1.6rem;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      gap: 1rem;
+      padding-left: 2rem;
+
+      li {
+        list-style: url("./images/mic.svg");
+
+        h5 {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  :root {
+    scroll-padding-top: 32svh;
+  }
+
+  header {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+  }
+
+  section#cathalog {
+    /* padding-top: 24rem; */
+    position: fixed;
+    height: 20svh;
+    top: 12svh;
+    left: 0px;
+
+    nav#alphabet {
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 0.8rem;
+    }
+  }
+
+  div.content {
+    padding-top: 32svh;
+
+    section {
+      h3 {
+        width: 60%;
+      }
+
+      h4 {
+        width: 40%;
+      }
+
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  :root {
+    scroll-padding-top: 32svh;
+  }
+
+  header {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+  }
+
+  section#cathalog {
+    /* padding-top: 24rem; */
+    position: fixed;
+    height: 20svh;
+    top: 12svh;
+    left: 0px;
+
+    nav#alphabet {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      gap: 0.4rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  div.content {
+    padding-top: 32svh;
+
+    section {
+      h3 {
+        width: 80%;
+      }
+
+      h4 {
+        width: 60%;
+      }
+
+      ul {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
