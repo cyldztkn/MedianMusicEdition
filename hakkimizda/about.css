@@ -65,17 +65,15 @@ main {
         ul {
             width: 100%;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr ;
             gap: 1rem;
 
             h4 {
                 font-weight: 600;
+                margin-bottom: 1rem;
             }
 
-            p {
-                font-size: 0.8rem;
-                margin: 0.4rem 0px;
+            a {
                 font-weight: 300;
             }
         }
