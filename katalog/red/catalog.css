@@ -1,3 +1,20 @@
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 :root {
   scroll-behavior: smooth;
   scroll-padding-top: 28svh;
@@ -6,6 +23,7 @@
 main {
   position: relative;
   background-color: var(--light-bg);
+  min-height: 100svh;
 }
 
 section#cathalog {
@@ -29,6 +47,7 @@ section#cathalog {
 
     a {
       color: var(--orange);
+      background-color: white;
       border: 1px solid var(--orange);
       padding: 0.4rem;
       border-radius: 8px;
@@ -44,6 +63,23 @@ section#cathalog {
 div.content {
   width: 92%;
   margin: 0px auto;
+  #loading-anim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    h4 {
+      color: var(--orange);
+    }
+    img {
+      width: 4rem;
+      aspect-ratio: 1/1;
+      -webkit-animation: spin 800ms ease-in-out infinite;
+      -moz-animation: spin 800ms ease-in-out infinite;
+      animation: spin 800ms ease-in-out infinite;
+    }
+  }
 
   section {
     height: unset;
@@ -61,7 +97,7 @@ div.content {
     h4 {
       color: var(--orange);
       font-weight: 400;
-      width: 30%;
+      width: 20%;
       border-bottom: 2px solid var(--orange);
       padding: 0.5rem 1.6rem;
     }
@@ -79,6 +115,12 @@ div.content {
         h5 {
           text-transform: capitalize;
         }
+      }
+      li.only-singer {
+        list-style: url("./images/singer.svg");
+      }
+      li.singer-songwritter {
+        list-style: url("./images/singer-songwritter.svg");
       }
     }
   }
