@@ -122,10 +122,6 @@ const fetchAndLogData = async () => {
   filmList.push(...await fetchData(URLs.film));
   reklamList.push(...await fetchData(URLs.reklam));
 
-  console.log("Dizi List: ", diziList);
-  console.log("Film List: ", filmList);
-  console.log("Reklam List: ", reklamList);
-
   updateDOM(); // Update the DOM after fetching data
 };
 
