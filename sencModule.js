@@ -2,11 +2,14 @@
 const URLs = {
   dizi: "https://api.airtable.com/v0/appgrquFZqUAefhYP/tblSK4POZp4QKPMAX?view=sort",
   film: "https://api.airtable.com/v0/appgrquFZqUAefhYP/tbl6TBl0E8y2oYrBe?view=sort",
-  reklam: "https://api.airtable.com/v0/appgrquFZqUAefhYP/tblQqYffWaUu1n537?view=sort",
-  lastJobs: "https://api.airtable.com/v0/appgrquFZqUAefhYP/tbl7ELsFSPOxT2pEk?view=sort"
+  reklam:
+    "https://api.airtable.com/v0/appgrquFZqUAefhYP/tblQqYffWaUu1n537?view=sort",
+  lastJobs:
+    "https://api.airtable.com/v0/appgrquFZqUAefhYP/tbl7ELsFSPOxT2pEk?view=sort",
 };
 
-const token = "patkiUsl9AxawWBBO.00dde5170120efe1997d407bb1051b50622fe00e97f4ab412ac4ad42dbd1a8dc";
+const token =
+  "patkiUsl9AxawWBBO.00dde5170120efe1997d407bb1051b50622fe00e97f4ab412ac4ad42dbd1a8dc";
 
 // Lists to hold fetched video IDs
 const diziList = [];
@@ -37,7 +40,7 @@ const fetchData = async (url) => {
 // Function to extract video ID from URL
 const extractVideoID = (url) => {
   try {
-    return url.split("/")[3].split('?')[1].split('&')[0].split('=')[1];
+    return url.split("/")[3].split("?")[1].split("&")[0].split("=")[1];
   } catch (error) {
     console.error("Error extracting video ID: ", error);
     return null;
@@ -49,19 +52,19 @@ const updateDOM = () => {
   const diziEl = document.getElementById("dizi");
   const filmEl = document.getElementById("film");
   const reklamEl = document.getElementById("reklam");
-  const lastJobs = document.getElementById('last-jobs');
+  const lastJobs = document.getElementById("last-jobs");
 
   lastJobs.innerHTML = sonIslerList
-  .map((item) => {
-    return `<div class="video-container" data-video-id="${item}">
+    .map((item) => {
+      return `<div class="video-container" data-video-id="${item}">
                 <div class="video-placeholder" style="background-image: url('https://img.youtube.com/vi/${item}/hqdefault.jpg');">
                   <button class="play-button">
                     <img src="./images/play-icon.svg" alt="" srcset="" />
                   </button>
                 </div>
               </div>`;
-  })
-  .join("");
+    })
+    .join("");
 
   diziEl.innerHTML = diziList
     .map((item) => {
@@ -133,14 +136,10 @@ const addEventListeners = () => {
 
 // Fetch and log data for each category
 const fetchAndLogData = async () => {
-  diziList.push(...await fetchData(URLs.dizi));
-  filmList.push(...await fetchData(URLs.film));
-  reklamList.push(...await fetchData(URLs.reklam));
-  sonIslerList.push(...await fetchData(URLs.lastJobs));
-
-  console.log("Dizi List: ", diziList);
-  console.log("Film List: ", filmList);
-  console.log("Reklam List: ", reklamList);
+  diziList.push(...(await fetchData(URLs.dizi)));
+  filmList.push(...(await fetchData(URLs.film)));
+  reklamList.push(...(await fetchData(URLs.reklam)));
+  sonIslerList.push(...(await fetchData(URLs.lastJobs)));
 
   updateDOM(); // Update the DOM after fetching data
 };

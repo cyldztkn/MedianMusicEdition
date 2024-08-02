@@ -15,6 +15,11 @@
 
       gtag("config", "G-99355S7KXS");
     </script>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Median Müzik Edisyon, 2008'den beri telif yönetimi, müzik seçimi ve yaratıcı hizmetler sunan, yerli ve yabancı eser sahiplerine destek veren bağımsız bir şirkettir."
+    />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -36,6 +41,17 @@
     <script type="module" src="./sencModule.js"></script>
   </head>
   <body>
+    <div id="cookieConsentBanner">
+      <div class="inner">
+        <p>
+          Bu site çerezleri kullanmaktadır. Devam ederek çerez kullanımını kabul
+          etmiş oluyorsunuz.
+        </p>
+        <button onclick="acceptCookies()">Kabul Et</button>
+        <button class="outline" onclick="rejectCookies()">Reddet</button>
+      </div>
+    </div>
+
     <div id="root">
       <!-- Header Start -->
       <header>
@@ -91,13 +107,22 @@
           <div class="slider-provider">
             <div class="slider-buttons">
               <div class="slider-button selected" id="telif-button">
-                <img src="./images/telif-menu-img.png" alt="" />
+                <img
+                  src="./images/telif-menu-img.png"
+                  alt="telif hakları yönetimi slide button görseli"
+                />
               </div>
               <div class="slider-button" id="lisans-button">
-                <img src="./images/lisanslama-menu-img.png" alt="" />
+                <img
+                  src="./images/lisanslama-menu-img.png"
+                  alt="lisanslama yönetimi slide button görseli"
+                />
               </div>
               <div class="slider-button" id="senk-button">
-                <img src="./images/senkronizasyon-menu-img.png" alt="" />
+                <img
+                  src="./images/senkronizasyon-menu-img.png"
+                  alt="senkronizasyon yönetimi slide button görseli"
+                />
               </div>
             </div>
 
@@ -107,7 +132,7 @@
                   <div class="img">
                     <img
                       src="./images/median-muzik-edisyon-telif-yonetimi-hizmetleri.jpg"
-                      alt=""
+                      alt="median müzik edisyon | telif yönetim hizmetleri"
                     />
                   </div>
 
@@ -124,7 +149,7 @@
                   <div class="img">
                     <img
                       src="./images/median-muzik-edisyon-lisanslama-hizmetleri.jpg"
-                      alt=""
+                      alt="median müzik edisyon | lisanslama hizmetleri"
                     />
                   </div>
 
@@ -140,7 +165,7 @@
                   <div class="img">
                     <img
                       src="./images/median-muzik-edisyon-senkronizasyon-hizmetleri.png"
-                      alt=""
+                      alt="median müzik edisyon | senkronizasyon hizmetleri"
                     />
                   </div>
 
@@ -211,7 +236,6 @@
       <section class="infinity-carousel-logo">
         <div class="infinity-carousel-container">
           <div class="infinity-carousel">
-            div.
             <!-- Slides will be inserted here by JavaScript -->
           </div>
         </div>
@@ -261,8 +285,14 @@
             <p>tel: 0 212 252 53 51</p>
           </div>
           <div class="footer-logos">
-            <img src="./images/impf-logo.png" alt="" />
-            <img src="./images/medder-logo.png" alt="" />
+            <img
+              src="./images/impf-logo.png"
+              alt="IMPF Logo | Median Müzik Edisyon Partneri"
+            />
+            <img
+              src="./images/medder-logo.png"
+              alt="Medder Logo | Median Müzik Edisyon Partneri"
+            />
           </div>
         </div>
       </footer>
@@ -272,5 +302,31 @@
       </div>
       <!-- Footer End -->
     </div>
+    <script>
+      // GDPR
+      document.addEventListener("DOMContentLoaded", () => {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        if (
+          localStorage.getItem("cookieConsent") === null ||
+          localStorage.getItem("cookieConsent") !== "true"
+        ) {
+          gdprContainerEl.style.display = "block";
+        } else {
+          gdprContainerEl.style.display = "none";
+        }
+      });
+
+      function acceptCookies() {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        gdprContainerEl.style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+      }
+
+      function rejectCookies() {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        gdprContainerEl.style.display = "none";
+        localStorage.setItem("cookieConsent", "false");
+      }
+    </script>
   </body>
 </html>

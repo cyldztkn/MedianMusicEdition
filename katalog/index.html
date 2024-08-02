@@ -15,7 +15,11 @@
 
       gtag("config", "G-99355S7KXS");
     </script>
-
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Median Müzik Edisyon Telif hakları ve Lisansları bulunan sanatçılar, şarkıcılar ve Sözyazarları Listesi"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Page Info -->
@@ -34,6 +38,16 @@
     <script src="./catalog.js" defer></script>
   </head>
   <body>
+    <div id="cookieConsentBanner">
+      <div class="inner">
+        <p>
+          Bu site çerezleri kullanmaktadır. Devam ederek çerez kullanımını kabul
+          etmiş oluyorsunuz.
+        </p>
+        <button onclick="acceptCookies()">Kabul Et</button>
+        <button class="outline" onclick="rejectCookies()">Reddet</button>
+      </div>
+    </div>
     <div id="root">
       <!-- Header Start -->
       <header>
@@ -66,15 +80,15 @@
       <!-- Header End -->
       <main>
         <div class="container">
-          <a href="/preview/katalog/blue">
+          <a href="/katalog/blue">
             <div id="median-music-edition">
-              <img src="./images/median-music-blue-catalog.png" alt="" />
+              <img src="./images/median-music-blue-catalog.png" alt="Median Müzik Edisyon Katalog Blue Listesi" />
               <button class="outline">Median Müzik Edisyon</button>
             </div>
           </a>
-          <a href="/preview/katalog/red">
+          <a href="/katalog/red">
             <div id="median-red-music">
-              <img src="./images/median-music-red-catalog.png" alt="" />
+              <img src="./images/median-music-red-catalog.png" alt="Median Müzik Edisyon Katalog Blue Listesi" />
               <button class="outline">Median Red Music</button>
             </div>
           </a>
@@ -126,8 +140,8 @@
             <p>tel: 0 212 252 53 51</p>
           </div>
           <div class="footer-logos">
-            <img src="./images/impf-logo.png" alt="" />
-            <img src="./images/medder-logo.png" alt="" />
+            <img src="./images/impf-logo.png" alt="Median Müzik Edisyon Katalog Blue Listesi" />
+            <img src="./images/medder-logo.png" alt="Medder Logo | Median Müzik Edisyon Partneri" />
           </div>
         </div>
       </footer>
@@ -137,5 +151,31 @@
       </div>
       <!-- Footer End -->
     </div>
+    <script>
+      // GDPR
+      document.addEventListener("DOMContentLoaded", () => {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        if (
+          localStorage.getItem("cookieConsent") === null ||
+          localStorage.getItem("cookieConsent") !== "true"
+        ) {
+          gdprContainerEl.style.display = "block";
+        } else {
+          gdprContainerEl.style.display = "none";
+        }
+      });
+
+      function acceptCookies() {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        gdprContainerEl.style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+      }
+
+      function rejectCookies() {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        gdprContainerEl.style.display = "none";
+        localStorage.setItem("cookieConsent", "false");
+      }
+    </script>
   </body>
 </html>

@@ -105,6 +105,32 @@ button {
   background-color: red;
 }
 
+#cookieConsentBanner {
+  position: fixed;
+  font-size: 10px;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--light-bg);
+  text-align: center;
+  z-index: 1000;
+  .inner {
+    padding: 0.2rem;
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 80%;
+    p {
+      font-size: 0.6rem;
+    }
+    button {
+      padding: 8px 12px;
+      font-size: 0.5rem;
+    }
+  }
+}
+
 /* Tablet size*/
 
 @media only screen and (max-width: 1024px) {
