@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-99355S7KXS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-99355S7KXS");
+    </script>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Median Müzik Edisyon, 2008'den beri telif yönetimi, müzik seçimi ve yaratıcı hizmetler sunan, yerli ve yabancı eser sahiplerine destek veren bağımsız bir şirkettir."
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page Info -->
+    <title>Median Müzik Edisyon</title>
+    <link
+      rel="shortcut icon"
+      href="./images/median-music-edition-favicon.svg"
+      type="image/x-icon"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="components.css" />
+    <link rel="stylesheet" href="main.css" />
+    <!-- Scripts -->
+    <script src="./main.js" defer></script>
+    <script type="module" src="./sencModule.js"></script>
+  </head>
+  <body>
+    <div id="cookieConsentBanner">
+      <div class="inner">
+        <p>
+          Bu site çerezleri kullanmaktadır. Devam ederek çerez kullanımını kabul
+          etmiş oluyorsunuz.
+        </p>
+        <button onclick="acceptCookies()">Kabul Et</button>
+        <button class="outline" onclick="rejectCookies()">Reddet</button>
+      </div>
+    </div>
+
+    <div id="root">
+      <!-- Header Start -->
+      <header>
+        <a href="/" title="Anasayfa'ya Dön">
+          <img
+            src="./images/median-music-logo-vectorel.svg"
+            alt="Median Music Edition Logo | Link to Homepage"
+          />
+        </a>
+        <div class="nav-container close" id="main-nav-container">
+          <img
+            src="./images/open-menu-icon.svg"
+            alt="mobile-menu-open-button"
+            id="open-button"
+          />
+          <img
+            src="./images/close-menu-icon.svg"
+            alt="mobile-menu-close-button"
+            id="close-button"
+          />
+          <nav id="main-nav">
+            <a href="/hakkimizda">Hakkımızda</a>
+            <a href="/katalog">Katalog</a>
+            <a href="/senkronizasyon">Senkronizasyon</a>
+            <a href="/iletisim">İletişim</a>
+            <a href="/is-ortaklari">İş Ortakları</a>
+            <hr />
+            <a href="/" class="multi-language-button">TR</a>
+          </nav>
+        </div>
+      </header>
+      <!-- Header End -->
+      <main>
+        <!-- Hero Content -->
+        <section class="hero-content">
+          <div class="content">
+            <h1>MEDİAN MÜZİK <br />EDİSYON</h1>
+            <div class="buttons">
+              <a href="./iletisim/"> <button>İletişime Geç</button> </a
+              ><a href="./katalog">
+                <button class="outline">Kataloğu Görüntüle</button>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Our Services Section -->
+
+        <section class="our-services">
+          <header>
+            <div class="title-container">
+              <h2>Hizmetlerimiz</h2>
+            </div>
+          </header>
+          <div class="slider-provider">
+            <div class="slider-buttons">
+              <div class="slider-button selected" id="telif-button">
+                <img
+                  src="./images/telif-menu-img.png"
+                  alt="telif hakları yönetimi slide button görseli"
+                />
+              </div>
+              <div class="slider-button" id="lisans-button">
+                <img
+                  src="./images/lisanslama-menu-img.png"
+                  alt="lisanslama yönetimi slide button görseli"
+                />
+              </div>
+              <div class="slider-button" id="senk-button">
+                <img
+                  src="./images/senkronizasyon-menu-img.png"
+                  alt="senkronizasyon yönetimi slide button görseli"
+                />
+              </div>
+            </div>
+
+            <div class="sliders">
+              <div class="carousel-area select-one" id="carousel-area">
+                <div class="slider" id="telif-slide">
+                  <div class="img">
+                    <img
+                      src="./images/median-muzik-edisyon-telif-yonetimi-hizmetleri.jpg"
+                      alt="median müzik edisyon | telif yönetim hizmetleri"
+                    />
+                  </div>
+
+                  <div class="content">
+                    <h3>Telif Yönetimi</h3>
+                    <p>
+                      Median Müzik, telif haklarınızı koruma altına alarak
+                      eserlerinizin adil gelir paylaşımını sağlar.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="slider" id="lisans-slide">
+                  <div class="img">
+                    <img
+                      src="./images/median-muzik-edisyon-lisanslama-hizmetleri.jpg"
+                      alt="median müzik edisyon | lisanslama hizmetleri"
+                    />
+                  </div>
+
+                  <div class="content">
+                    <h3>Lisans Yönetimi</h3>
+                    <p>
+                      Median Müzik, müzik eserlerinizin profesyonel lisans
+                      yönetimi ile yasal güvence altına alınmasını sağlar.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider" id="senk-slide">
+                  <div class="img">
+                    <img
+                      src="./images/median-muzik-edisyon-senkronizasyon-hizmetleri.png"
+                      alt="median müzik edisyon | senkronizasyon hizmetleri"
+                    />
+                  </div>
+
+                  <div class="content">
+                    <h3>Senkronizasyon</h3>
+                    <p>
+                      Median Müzik, eserlerinizi film, dizi ve reklam
+                      projeleriyle buluşturarak senkronizasyon hizmeti sunar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Last Jobs Section -->
+        <section class="last-jobs">
+          <h2>Son İşlerimiz</h2>
+          <div class="content" id="last-jobs">
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
+          </div>
+        </section>
+
+        <!-- Synchronization -->
+        <section class="synchronization">
+          <div class="button-area">
+            <div class="button selected" id="dizi-button">Dizi</div>
+            <div class="button" id="film-button">Film</div>
+            <div class="button" id="reklam-button">Reklam</div>
+          </div>
+
+          <div class="content">
+            <div class="slider-provider">
+              <div class="carousel-area dizi" id="senk-carousel">
+                <div class="dizi slide" id="dizi">
+                  <div class="video-container-sketlon"><span></span></div>
+                  <div class="video-container-sketlon"><span></span></div>
+                  <div class="video-container-sketlon"><span></span></div>
+                  <div class="video-container-sketlon"><span></span></div>
+                </div>
+                <div class="film slide" id="film"></div>
+                <div class="reklam slide" id="reklam"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="spotify">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/playlist/0z9IQmuy9jtWumHMa2UW4d?utm_source=generator&theme=0"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </section>
+      </main>
+      <!-- Footer Start -->
+      <section class="infinity-carousel-logo">
+        <div class="infinity-carousel-container">
+          <div class="infinity-carousel">
+            <!-- Slides will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="left">
+          <a href="/" class="logo-link">
+            <img
+              src="./images/median-music-logo-vectorel.svg"
+              alt="Median Music Edition Logo | Link to Homepage   "
+            />
+          </a>
+          <nav>
+            <a href="/hakkimizda">Hakkımızda</a>
+            <a href="/katalog">Katalog</a>
+            <a href="/senkronizasyon">Senkronizasyon</a>
+            <a href="/iletisim">İletişim</a>
+            <a href="/is-ortaklari">İş Ortakları</a>
+          </nav>
+        </div>
+        <div class="right">
+          <div class="social-media">
+            <a href="https://www.instagram.com/medianmusictr/"
+              ><img
+                src="./images/instagram-icon.svg"
+                alt="Median Music İnstagram Anchor Link" /></a
+            ><a
+              href="https://www.linkedin.com/company/median-muzik-edisyon-ltd-sti/"
+              ><img
+                src="./images/linkedin-icon.svg"
+                alt="Median Music Linkedin Anchor Link" /></a
+            ><a href="https://www.youtube.com/@MedianMuzikEdisyon"
+              ><img
+                src="./images/spotify-icon.svg"
+                alt="Median Music Spotify Anchor Link" /></a
+            ><a
+              href="https://open.spotify.com/user/317ll3fylgtacoc464phxx2hfh2a"
+              ><img
+                src="./images/youtube-icon.svg"
+                alt="Median Music Youtube Anchor Link"
+            /></a>
+          </div>
+          <div class="adress">
+            <p>Median Müzik Edisyon Ltd. Şti.</p>
+            <p>info@medianmuzik.com.tr</p>
+            <p>tel: 0 212 252 53 51</p>
+          </div>
+          <div class="footer-logos">
+            <img
+              src="./images/impf-logo.png"
+              alt="IMPF Logo | Median Müzik Edisyon Partneri"
+            />
+            <img
+              src="./images/medder-logo.png"
+              alt="Medder Logo | Median Müzik Edisyon Partneri"
+            />
+          </div>
+        </div>
+      </footer>
+      <div class="end">
+        2024 - Tüm Hakları Saklıdır |
+        <a href="https://www.dijitaleskiz.com.tr/">Eracraft</a>
+      </div>
+      <!-- Footer End -->
+    </div>
+    <script>
+      // GDPR
+      document.addEventListener("DOMContentLoaded", () => {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        if (
+          localStorage.getItem("cookieConsent") === null ||
+          localStorage.getItem("cookieConsent") !== "true"
+        ) {
+          gdprContainerEl.style.display = "block";
+        } else {
+          gdprContainerEl.style.display = "none";
+        }
+      });
+
+      function acceptCookies() {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        gdprContainerEl.style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+      }
+
+      function rejectCookies() {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        gdprContainerEl.style.display = "none";
+        localStorage.setItem("cookieConsent", "false");
+      }
+    </script>
+  </body>
+</html>
