@@ -1,0 +1,119 @@
+/* About */
+/*Default*/
+
+main {
+    section.about-us {
+        height: unset;
+        min-height: 100svh;
+
+        header {
+            .title-container {
+                h2 {
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+        .content {
+            width: 80%;
+            margin: 0px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4rem;
+            color: var(--text);
+            line-height: 160%;
+            font-weight: 300;
+
+            img {
+                width: 60%;
+            }
+
+            p {
+                width: 76%;
+            }
+        }
+
+    }
+
+    div.social-media {
+        width: 100%;
+        margin: 2rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        a {
+            padding: 0.4rem;
+            background-color: black;
+
+
+            img {
+                width: 1.6rem;
+            }
+        }
+    }
+
+    section.our-team {
+        width: 60%;
+        margin: 0px auto;
+        height: unset;
+        padding: 3rem 0px;
+
+        ul {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 1rem;
+            text-align: center;
+
+            h4 {
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                font-weight: 300;
+            }
+        }
+
+    }
+}
+
+/* Tablet size*/
+
+@media only screen and (max-width: 1024px) {
+    main {
+        section.about-us {
+            .content {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        section.our-team {
+            width: 80%;
+
+            ul {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+
+
+/* --Phone size--*/
+
+@media only screen and (max-width: 640px) {
+    main {
+        section.our-team {
+            ul {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
