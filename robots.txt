@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+Sitemap: https://www.medianmuzik.com/sitemap.xml

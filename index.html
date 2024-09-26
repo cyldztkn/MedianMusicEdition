@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="tr">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-99355S7KXS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-99355S7KXS");
+    </script>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Median Müzik Edisyon, 2008'den beri telif yönetimi, müzik seçimi ve yaratıcı hizmetler sunan, yerli ve yabancı eser sahiplerine destek veren bağımsız bir şirkettir."
+    />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Page Info -->
     <title>Median Müzik Edisyon</title>
     <link
       rel="shortcut icon"
-      href="./images/median-muzik-edisyon-logo-default-32x32.png"
+      href="./images/median-music-edition-favicon.svg"
       type="image/x-icon"
     />
 
@@ -18,15 +38,27 @@
     <link rel="stylesheet" href="main.css" />
     <!-- Scripts -->
     <script src="./main.js" defer></script>
+    <script type="module" src="./sencModule.js"></script>
   </head>
   <body>
+    <div id="cookieConsentBanner">
+      <div class="inner">
+        <p>
+          Bu site çerezleri kullanmaktadır. Devam ederek çerez kullanımını kabul
+          etmiş oluyorsunuz.
+        </p>
+        <button onclick="acceptCookies()">Kabul Et</button>
+        <button class="outline" onclick="rejectCookies()">Reddet</button>
+      </div>
+    </div>
+
     <div id="root">
       <!-- Header Start -->
       <header>
-        <a href="/preview" title="Anasayfa'ya Dön">
+        <a href="/" title="Anasayfa'ya Dön">
           <img
             src="./images/median-music-logo-vectorel.svg"
-            alt="Median Music Edition Logo | Link to Homepage   "
+            alt="Median Music Edition Logo | Link to Homepage"
           />
         </a>
         <div class="nav-container close" id="main-nav-container">
@@ -41,11 +73,13 @@
             id="close-button"
           />
           <nav id="main-nav">
-            <a href="/preview/hakkimizda">Hakkımızda</a>
-            <a href="/preview/katalog">Katalog</a>
-            <a href="/preview/senkronizasyon">Senkronizasyon</a>
-            <a href="/preview/iletisim">İletişim</a>
-            <a href="/preview/is-ortaklari">İş Ortakları</a>
+            <a href="/hakkimizda">Hakkımızda</a>
+            <a href="/katalog">Katalog</a>
+            <a href="/senkronizasyon">Senkronizasyon</a>
+            <a href="/iletisim">İletişim</a>
+            <a href="/is-ortaklari">İş Ortakları</a>
+            <hr />
+            <a href="/en" class="multi-language-button">EN</a>
           </nav>
         </div>
       </header>
@@ -75,13 +109,22 @@
           <div class="slider-provider">
             <div class="slider-buttons">
               <div class="slider-button selected" id="telif-button">
-                <img src="./images/telif-menu-img.png" alt="" />
+                <img
+                  src="./images/telif-menu-img.png"
+                  alt="telif hakları yönetimi slide button görseli"
+                />
               </div>
               <div class="slider-button" id="lisans-button">
-                <img src="./images/lisanslama-menu-img.png" alt="" />
+                <img
+                  src="./images/lisanslama-menu-img.png"
+                  alt="lisanslama yönetimi slide button görseli"
+                />
               </div>
               <div class="slider-button" id="senk-button">
-                <img src="./images/senkronizasyon-menu-img.png" alt="" />
+                <img
+                  src="./images/senkronizasyon-menu-img.png"
+                  alt="senkronizasyon yönetimi slide button görseli"
+                />
               </div>
             </div>
 
@@ -91,7 +134,7 @@
                   <div class="img">
                     <img
                       src="./images/median-muzik-edisyon-telif-yonetimi-hizmetleri.jpg"
-                      alt=""
+                      alt="median müzik edisyon | telif yönetim hizmetleri"
                     />
                   </div>
 
@@ -108,7 +151,7 @@
                   <div class="img">
                     <img
                       src="./images/median-muzik-edisyon-lisanslama-hizmetleri.jpg"
-                      alt=""
+                      alt="median müzik edisyon | lisanslama hizmetleri"
                     />
                   </div>
 
@@ -124,7 +167,7 @@
                   <div class="img">
                     <img
                       src="./images/median-muzik-edisyon-senkronizasyon-hizmetleri.png"
-                      alt=""
+                      alt="median müzik edisyon | senkronizasyon hizmetleri"
                     />
                   </div>
 
@@ -144,91 +187,13 @@
         <!-- Last Jobs Section -->
         <section class="last-jobs">
           <h2>Son İşlerimiz</h2>
-          <div class="content">
-            <!-- 1 -->
-
-            <div class="video-container" data-video-id="aqUi2-YcmVs">
-              <div
-                class="video-placeholder"
-                style="
-                  background-image: url('https://img.youtube.com/vi/aqUi2-YcmVs/hqdefault.jpg');
-                "
-              >
-                <button class="play-button">
-                  <img src="./images/play-icon.svg" alt="" srcset="" />
-                </button>
-              </div>
-            </div>
-            <!-- 2 -->
-
-            <div class="video-container" data-video-id="v0XDAx9sSqA">
-              <div
-                class="video-placeholder"
-                style="
-                  background-image: url('https://img.youtube.com/vi/v0XDAx9sSqA/hqdefault.jpg');
-                "
-              >
-                <button class="play-button">
-                  <img src="./images/play-icon.svg" alt="" srcset="" />
-                </button>
-              </div>
-            </div>
-            <!-- 3 -->
-
-            <div class="video-container" data-video-id="jBRJLoAPlVA">
-              <div
-                class="video-placeholder"
-                style="
-                  background-image: url('https://img.youtube.com/vi/jBRJLoAPlVA/hqdefault.jpg');
-                "
-              >
-                <button class="play-button">
-                  <img src="./images/play-icon.svg" alt="" srcset="" />
-                </button>
-              </div>
-            </div>
-            <!-- 4 -->
-
-            <div class="video-container" data-video-id="tNiyX6Y8Bf8">
-              <div
-                class="video-placeholder"
-                style="
-                  background-image: url('https://img.youtube.com/vi/tNiyX6Y8Bf8/hqdefault.jpg');
-                "
-              >
-                <button class="play-button">
-                  <img src="./images/play-icon.svg" alt="" srcset="" />
-                </button>
-              </div>
-            </div>
-            <!-- 5 -->
-
-            <div class="video-container" data-video-id="4PlXHiGuuFg">
-              <div
-                class="video-placeholder"
-                style="
-                  background-image: url('https://img.youtube.com/vi/4PlXHiGuuFg/hqdefault.jpg');
-                "
-              >
-                <button class="play-button">
-                  <img src="./images/play-icon.svg" alt="" srcset="" />
-                </button>
-              </div>
-            </div>
-            <!-- 6 -->
-
-            <div class="video-container" data-video-id="fqMCX-dgygM">
-              <div
-                class="video-placeholder"
-                style="
-                  background-image: url('https://img.youtube.com/vi/fqMCX-dgygM/hqdefault.jpg');
-                "
-              >
-                <button class="play-button">
-                  <img src="./images/play-icon.svg" alt="" srcset="" />
-                </button>
-              </div>
-            </div>
+          <div class="content" id="last-jobs">
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
+            <div class="video-container-sketlon"><span></span></div>
           </div>
         </section>
 
@@ -243,288 +208,14 @@
           <div class="content">
             <div class="slider-provider">
               <div class="carousel-area dizi" id="senk-carousel">
-                <div class="dizi slide">
-                  <!-- 1 -->
-                  <div class="video-container" data-video-id="tNiyX6Y8Bf8">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/tNiyX6Y8Bf8/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 2 -->
-
-                  <div class="video-container" data-video-id="4PlXHiGuuFg">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/4PlXHiGuuFg/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 3 -->
-
-                  <div class="video-container" data-video-id="fqMCX-dgygM">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/fqMCX-dgygM/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 4 -->
-                  <div class="video-container" data-video-id="oCGPdvHUbOc">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/oCGPdvHUbOc/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
+                <div class="dizi slide" id="dizi">
+                  <div class="video-container-sketlon"><span></span></div>
+                  <div class="video-container-sketlon"><span></span></div>
+                  <div class="video-container-sketlon"><span></span></div>
+                  <div class="video-container-sketlon"><span></span></div>
                 </div>
-                <div class="film slide">
-                  <!-- 1 -->
-                  <div class="video-container" data-video-id="a-540KYiiq4">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/a-540KYiiq4/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 2 -->
-                  <div class="video-container" data-video-id="Zn6pSVMtGQI">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/Zn6pSVMtGQI/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 3 -->
-
-                  <div class="video-container" data-video-id="iI2Yrx4c3as">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/iI2Yrx4c3as/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 4 -->
-
-                  <div class="video-container" data-video-id="AkbGt1Vbums">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/AkbGt1Vbums/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 5 -->
-
-                  <div class="video-container" data-video-id="6N9BLjT7HbI">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/6N9BLjT7HbI/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 6 -->
-
-                  <div class="video-container" data-video-id="FpCseombfDE">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/FpCseombfDE/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 7 -->
-
-                  <div class="video-container" data-video-id="2W6bajaGPAs">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/2W6bajaGPAs/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 8 -->
-
-                  <div class="video-container" data-video-id="H6SM2A0UkGc">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/H6SM2A0UkGc/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="reklam slide">
-                  <!-- 1 -->
-
-                  <div class="video-container" data-video-id="B_1BsyaAiCM">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/B_1BsyaAiCM/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 2 -->
-
-                  <div class="video-container" data-video-id="aqUi2-YcmVs">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/aqUi2-YcmVs/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 3 -->
-
-                  <div class="video-container" data-video-id="cl08lelDD7o">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/cl08lelDD7o/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 4 -->
-
-                  <div class="video-container" data-video-id="qrgJq7GAURo">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/qrgJq7GAURo/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 5 -->
-
-                  <div class="video-container" data-video-id="gEnoj-z8o5A">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/gEnoj-z8o5A/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 6 -->
-
-                  <div class="video-container" data-video-id="Q_uDZW_EjYQ">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/Q_uDZW_EjYQ/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 7 -->
-
-                  <div class="video-container" data-video-id="jBqIBMHmBjE">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/jBqIBMHmBjE/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                  <!-- 8 -->
-
-                  <div class="video-container" data-video-id="TR-nzYwiqSM">
-                    <div
-                      class="video-placeholder"
-                      style="
-                        background-image: url('https://img.youtube.com/vi/TR-nzYwiqSM/hqdefault.jpg');
-                      "
-                    >
-                      <button class="play-button">
-                        <img src="./images/play-icon.svg" alt="" srcset="" />
-                      </button>
-                    </div>
-                  </div>
-                </div>
+                <div class="film slide" id="film"></div>
+                <div class="reklam slide" id="reklam"></div>
               </div>
             </div>
           </div>
@@ -547,7 +238,6 @@
       <section class="infinity-carousel-logo">
         <div class="infinity-carousel-container">
           <div class="infinity-carousel">
-            div.
             <!-- Slides will be inserted here by JavaScript -->
           </div>
         </div>
@@ -562,11 +252,11 @@
             />
           </a>
           <nav>
-            <a href="/preview/hakkimizda">Hakkımızda</a>
-            <a href="/preview/katalog">Katalog</a>
-            <a href="/preview/senkronizasyon">Senkronizasyon</a>
-            <a href="/preview/iletisim">İletişim</a>
-            <a href="/preview/is-ortaklari">İş Ortakları</a>
+            <a href="/hakkimizda">Hakkımızda</a>
+            <a href="/katalog">Katalog</a>
+            <a href="/senkronizasyon">Senkronizasyon</a>
+            <a href="/iletisim">İletişim</a>
+            <a href="/is-ortaklari">İş Ortakları</a>
           </nav>
         </div>
         <div class="right">
@@ -597,8 +287,14 @@
             <p>tel: 0 212 252 53 51</p>
           </div>
           <div class="footer-logos">
-            <img src="./images/impf-logo.png" alt="" />
-            <img src="./images/medder-logo.png" alt="" />
+            <img
+              src="./images/impf-logo.png"
+              alt="IMPF Logo | Median Müzik Edisyon Partneri"
+            />
+            <img
+              src="./images/medder-logo.png"
+              alt="Medder Logo | Median Müzik Edisyon Partneri"
+            />
           </div>
         </div>
       </footer>
@@ -608,5 +304,31 @@
       </div>
       <!-- Footer End -->
     </div>
+    <script>
+      // GDPR
+      document.addEventListener("DOMContentLoaded", () => {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        if (
+          localStorage.getItem("cookieConsent") === null ||
+          localStorage.getItem("cookieConsent") !== "true"
+        ) {
+          gdprContainerEl.style.display = "block";
+        } else {
+          gdprContainerEl.style.display = "none";
+        }
+      });
+
+      function acceptCookies() {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        gdprContainerEl.style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+      }
+
+      function rejectCookies() {
+        let gdprContainerEl = document.getElementById("cookieConsentBanner");
+        gdprContainerEl.style.display = "none";
+        localStorage.setItem("cookieConsent", "false");
+      }
+    </script>
   </body>
 </html>
