@@ -1,50 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Türkçe Sayfalar -->
   <url>
     <loc>http://www.median.com.tr/</loc>
-    <lastmod>2024-08-02</lastmod>
+    <lastmod>2024-09-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>http://www.median.com.tr/hakkimizda</loc>
-    <lastmod>2024-08-02</lastmod>
+    <lastmod>2024-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://www.median.com.tr/iletisim</loc>
-    <lastmod>2024-08-02</lastmod>
+    <lastmod>2024-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>http://www.median.com.tr/is-ortaklari</loc>
-    <lastmod>2024-08-02</lastmod>
+    <lastmod>2024-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://www.median.com.tr/katalog</loc>
-    <lastmod>2024-08-02</lastmod>
+    <lastmod>2024-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>http://www.median.com.tr/katalog/red</loc>
-    <lastmod>2024-08-02</lastmod>
+    <lastmod>2024-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://www.median.com.tr/katalog/blue</loc>
-    <lastmod>2024-08-02</lastmod>
+    <lastmod>2024-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>http://www.median.com.tr/senkronizasyon</loc>
-    <lastmod>2024-08-02</lastmod>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- İngilizce Sayfalar -->
+  <url>
+    <loc>http://www.median.com.tr/en/</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.median.com.tr/en/about-us</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://www.median.com.tr/en/contact</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://www.median.com.tr/en/partners</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>http://www.median.com.tr/en/catalogue</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>http://www.median.com.tr/en/catalogue/red</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://www.median.com.tr/en/catalogue/blue</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://www.median.com.tr/en/synchronization</loc>
+    <lastmod>2024-09-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
