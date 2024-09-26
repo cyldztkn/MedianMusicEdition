@@ -111,31 +111,4 @@ diziButtonEl.addEventListener("click", showDizi);
 filmButtonEl.addEventListener("click", showFilm);
 reklamButtonEl.addEventListener("click", showReklam);
 
-// Video İframe Loader
-document.addEventListener("DOMContentLoaded", function () {
-  const videoContainers = document.querySelectorAll(".video-container");
 
-  videoContainers.forEach((container) => {
-    const placeholder = container.querySelector(".video-placeholder");
-    const videoId = container.getAttribute("data-video-id");
-
-    placeholder.addEventListener("click", function () {
-      const iframe = document.createElement("iframe");
-      iframe.setAttribute(
-        "src",
-        `https://www.youtube.com/embed/${videoId}?autoplay=1`
-      );
-      iframe.setAttribute("title", "YouTube video player");
-      iframe.setAttribute("frameborder", "0");
-      iframe.setAttribute(
-        "allow",
-        "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      );
-      iframe.setAttribute("allowfullscreen", "true");
-      iframe.setAttribute("loading", "lazy");
-
-      container.innerHTML = "";
-      container.appendChild(iframe);
-    });
-  });
-});
